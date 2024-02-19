@@ -45,6 +45,7 @@ public class CustomerController {
         return ResponseEntity.ok(updateeCustomer);
     }
 
+//  Delete Customer
     @DeleteMapping("/customer/{id}")
     public ResponseEntity<?> deleteCustomer(@PathVariable Long id) {
         Customer existingCustomer = customerService.getCustomerById(id);
